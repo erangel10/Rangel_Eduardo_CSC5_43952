@@ -20,7 +20,7 @@ int main(int argc, char** argv) {
     taxCoun = 2;
     totlPur = 95;
     //Output the total of taxes adding taxCoun and taxStat
-    cout<<"The total amount of taxes is "<<(taxStat + taxCoun) / CNVPCT / totlPur<<endl;
+    cout<<"The total amount of taxes is "<<(taxStat + taxCoun) * CNVPCT / totlPur<<endl;
    
 
     return 0;
