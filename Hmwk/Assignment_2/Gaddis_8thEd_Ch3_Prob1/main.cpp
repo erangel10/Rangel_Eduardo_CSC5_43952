@@ -16,7 +16,7 @@ int main(int argc, char** argv) {
     float tnkSize;//Size of the tank
     
     //Input the size of the tank in liters
-    cout<<"Enter the size of the tank in ltrs"<<endl;
+    cout<<"Enter the size of the tank in lters"<<endl;
     cin>>tnkSize;
     //Input the number of miles
     cout<<"Enter the number of Miles"<<endl;
