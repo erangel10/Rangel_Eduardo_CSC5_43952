@@ -35,7 +35,7 @@ int main(int argc, char** argv) {
         if (rec1 < rec2){
             cout<<"Rectangle 2 is bigger than rectangle 1"<<endl;
     }
-    if (rec1 > rec2){
+    else if (rec1 > rec2){
         cout<<"Rectangle 1 is bigger than rectangle 2"<<endl;
        
     }
