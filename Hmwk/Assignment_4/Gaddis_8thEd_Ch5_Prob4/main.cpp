@@ -18,13 +18,13 @@ using namespace std;
 int main(int argc, char** argv) {
     //Declare variables
     float calorie = 3.6;
-    cout<<"********************"<<endl;
+    cout<<"************"<<endl;
     //Use FOR loop to calculate the calories 
     for (int burned=5;burned<=30;burned += 5){
-        cout<<" "<<burned<<"\t\t"<<calorie * burned<<endl;
+        cout<<" "<<burned<<"\t"<<calorie * burned<<endl;
         
     }
-    cout<<"********************"<<endl;
+    cout<<"************"<<endl;
 
     return 0;
 }

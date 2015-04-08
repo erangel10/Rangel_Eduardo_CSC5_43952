@@ -17,13 +17,17 @@ using namespace std;
 //Execution begins here
 int main(int argc, char** argv) {
     //Declare variables
-    int number;
+    int sum=0,number;
     //prompt the user for input 
-    cout<<"Please enter a positive number "<<endl;
+    cout<<"Please enter a number "<<endl;
     cin>>number;
-    //Use the for loop to calculate the number from 1 to the entered number
-    for (int total=1;total<=number;total++){
-        cout<<" "<<total<<"\t\t"<<total + number<<endl;
+    //Use the for loop to calculate the number from 1 to the entered number by the user
+    for (int total=0;total<=number;total++){
+        //Input validation
+            sum = sum + number;
+            total++;
+       
+        
     }
 
     return 0;
