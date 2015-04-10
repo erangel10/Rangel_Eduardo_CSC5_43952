@@ -26,7 +26,7 @@ int main(int argc, char** argv) {
         cout<<"Please enter a positive number"<<endl;
         cin>>speed;
     }
-    cout<<"How many hour has the vehicle traveled? "<<endl;
+    cout<<"How many hours has the vehicle traveled? "<<endl;
     cin>>time;
     while (time < 1 ){
         cout<<"Please enter a number greater than or equal to 1 for the time traveled"<<endl;
@@ -34,7 +34,7 @@ int main(int argc, char** argv) {
     }
   //use the FOR loop to calculate the distance and output the result
     for (int total=1;total<=time;total++){
-        cout<<" "<<total<<"\t\t"<<speed * total<<endl;
+        cout<<" "<<total<<"\t"<<speed * total<<endl;
     }
     
 
