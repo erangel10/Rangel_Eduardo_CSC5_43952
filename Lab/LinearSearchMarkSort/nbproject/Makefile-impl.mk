@@ -24,7 +24,7 @@ CLEAN_SUBPROJECTS=${CLEAN_SUBPROJECTS_${SUBPROJECTS}}
 
 
 # Project Name
-PROJECTNAME=MidtermAssignment
+PROJECTNAME=LinearSearchMarkSort
 
 # Active Configuration
 DEFAULTCONF=Debug
