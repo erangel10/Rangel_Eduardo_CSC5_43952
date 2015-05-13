@@ -201,8 +201,7 @@ int main(int argc, char** argv)
     }
 
     }
-
-    // as I said in my previous post, read up on functions!
+    
     int lterFil(char guess, string secretW, string &guessW)
     {
     int i;
