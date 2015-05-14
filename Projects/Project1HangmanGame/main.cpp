@@ -25,17 +25,16 @@ void average();
 int main(int argc, char** argv)
 {
     const int  maxTrys = 5;//number of maximum tries
-    string name;
+    //string name;
     char letter;
     int WrgGues = 0;//Number of wrong guesses
     string word;
-
+    string level;
     srand(time(0)); //Set random numerator seed
 
     // welcome the user
     cout << "\n\nWelcome to hangman!! Guess a country that comes into your mind.";
     // Ask user for for Easy, Average, Hard
-    string level;
     cout << "\nChoose a LEVEL(E - Easy, A - Average, H - Hard):" << endl;
     cin >> level;
 
@@ -84,6 +83,7 @@ int main(int argc, char** argv)
                             break;
                     }
             }
+            //If the user uses all 5 chances without guessing the word output the result to the user
             if (WrgGues == maxTrys)
             {
                     cout << "\nSorry, you lose...you've been hanged." << endl;
@@ -93,7 +93,7 @@ int main(int argc, char** argv)
             cin.get();
             return 0;
     }
-
+    //Use the average level with more letters than the easy level
     else if (level == "Average" || level == "average")
     {
             //put all the string inside the array here
@@ -146,7 +146,7 @@ int main(int argc, char** argv)
             cin.get();
             return 0;
     }
-
+    //The hard level is supposed to have words with more letters than the easy and average levels
     else if (level == "Hard" || level == "hard")
     {
             //put all the string inside the array here
@@ -201,7 +201,7 @@ int main(int argc, char** argv)
     }
 
     }
-    
+    //Function to calculate the letters we already used
     int lterFil(char guess, string secretW, string &guessW)
     {
     int i;
@@ -209,7 +209,7 @@ int main(int argc, char** argv)
     int len = secretW.length();
     for (i = 0; i< len; i++)
     {
-            // Did we already match this letter in a previous guess?
+            // Identify if a word has already been used in another guess
             if (guess == guessW[i])
                     return 0;
             // Is the guess in the secret word?
