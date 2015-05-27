@@ -14,7 +14,7 @@ using namespace std;
 
 //Function Prototypes
 void tSort(vector<int>&);//ticket sorting
-bool search(vector<int>,int);//serach for ticket
+bool search(vector<int>,int);//search for ticket
 //Execution begins here
 int main(int argc, char** argv) {
     
