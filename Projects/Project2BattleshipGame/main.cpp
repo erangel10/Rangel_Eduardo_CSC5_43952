@@ -13,23 +13,25 @@ using namespace std;
 //User Libraries
 
 //Global Constants
-
+const int cols = 10;
 //Functions Prototypes
 void rules();//Output the rules of the game 
-void prntBrd();//Print the board of the game
-void board2(int **,int,int);
+void prntBrd(char [][cols]);//Print the board of the game
+void board2();
 //Execution Begins here
 int main(int argc, char** argv) {
     //Declare variables
-    int rows=10,cols=10;
-    int **array=board2(rows,cols);
+    int rows = 10;
+    int cols = 10;
     //call the rules function into main
     rules();
     //call the board function into main to output the game board
-    prntBrd();
-    //board 2
-    //board2();
+    char board[10][10]; char pBoard[10][10];
+    prntBrd(board);
+    
+    board2();
 
+    //Exit stage right
     return 0;
 }
 
@@ -41,40 +43,34 @@ void rules()
     
 }
 
-void prntBrd()
+void prntBrd(char board[][cols])
 {
-    const int ocupied=1; 
-    //Declare array in this case is a 2D array
-    int board[10][10];
-    //Now use the for loop to create the board
-    for (int i=0;i<11;i++){
-        //cout<<i<<endl;
-        for (int j=0;j<11;j++){
-            cout<<j<<endl;
-         // cout<<board[i][j] = ocupied<<endl;
-            
-        }
-       
-    }
-   
     
+  char cols = 10;
+  for (int i=0;i<10;i++){
+      for (int j=0;j<cols;j++){
+          cout<<board[i][j];
+      }
+  }  
 }
 
-void board2(int **a, int r, int c){
+void board2()
+{    
     
-     cout<<"THIS IS YOUR MULTIPLICATION TABLE!!!"<<endl;
-cout<<endl<<setw(8)<<0;
-for(int i=1;i <c;i++){
-cout<<setw(4)<<i;
-}
-cout<<endl;
-//Print the array
-for(int i=0;i<r;i++){
-cout<<setw(4)<<i;
-for(int j=0;j<c;j++){
-cout<<setw(4)<<a[i][j];
-}
-cout<<endl;
-   
-}
+    int a [10][10];
+    int r=10;
+    int c=10;
+   for (int i=1;i<c;i++){
+       cout<<setw(4)<<i;
+   } 
+    
+    for (int i=0;i<r;i++){
+        cout<<setw(4)<<i;
+        for (int j=0;j<c;j++){
+            cout<<setw(4)<<a[i][j];
+            
+        }
+        cout<<endl;
+    }
+    
 }
